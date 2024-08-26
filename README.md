@@ -13,9 +13,11 @@ Run `ng generate component component-name` to generate a new component. You can 
 ## Build
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-##Explanation
+## Explanation
+
 It serves as a platform to aggregate and display news from NewsAPI. The website is built using Angular. Category-based classification is available.
-##Usage
+## Usage
+
 Home page: The home page displays a selection of news from the News API.
 Category: Users can select a specific category from the navigation menu based on their article interest.
 ## Screenshots
