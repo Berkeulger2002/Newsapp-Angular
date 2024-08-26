@@ -1,0 +1,39 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center; /* Kutuları ortalamak için */
+}
+.box {
+    width: calc(50% - 10px);
+    background-color: white;
+    border: 1px solid gray;
+    box-sizing: border-box;
+    padding: 10px;
+}
+.box h2 {
+    border-bottom: 1px solid gray;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+.gray-text {
+    color: gray;
+    display: inline-block; /* Yatay hizalama için inline-block */
+    width: 150px; /* Etiket genişliği ayarı */
+}
+.box p {
+    margin: 0;
+}
+.centered-box {
+    width: 100%; /* Tam genişlik ayarı */
+    display: flex;
+    justify-content: center; /* Ortalamak için */
+    box-sizing: border-box;
+}
+/* Yeni kutular için stil */
+.full-width-box {
+    width: 100%; /* Tam genişlik */
+    display: flex;
+    justify-content: center; /* Ortalamak için */
+    box-sizing: border-box;
+}

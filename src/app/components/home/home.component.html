@@ -1,0 +1,163 @@
+
+<div class="header">
+  <div class="container">
+    <div class="slider">
+      <div class="slider-wrapper">
+        <div *ngFor="let article of visibleArticles" class="testimonal">
+          <div class="user-text">
+            <a [href]="article.url"><h3>{{ article.title }}</h3></a>
+            <p>{{ article.description }}</p>
+          </div>
+          <div class="img">
+            <img [src]="article.urlToImage" alt="" class="user">
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="slider-btn prev" (click)="prevSlide()">&#10094;</button>
+    <button class="slider-btn next" (click)="nextSlide()">&#10095;</button>
+  </div>
+</div>
+
+    <div class="news-editor">
+      <div class="news-editor-edit">
+        <div class="heading">
+          <h2>Editor Picking</h2>
+        </div>
+        <div class="sub-head">
+          <div *ngFor="let article of articles.slice(4, 5)" class="sub-head-big-part">
+            <img [src]="article.urlToImage" alt="{{ article.title }}">
+            <h3>{{article.title}}</h3>
+            <p style="font-size:15px;">{{article.description}}</p>
+           <strong>{{article.author}}</strong>
+          </div>
+          <div class="sub-head-small-part">
+            <ul>
+              <li *ngFor="let article of articles.slice(6, 9)">
+                <img [src]="article.urlToImage" alt="{{ article.title }}">
+                <h4><a [href]="article.url">{{ article.title }}</a></h4>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="news-editor-trend">
+        <div class="trend-heading">
+          <h2>Trending</h2>
+        </div>
+        <div class="trend-news">
+          <ul>
+            <li *ngFor="let article of articles.slice(9, 12)">
+              <p><a [href]="article.url">{{ article.title }}</a></p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-container" *ngFor="let article of articles.slice(12, 13)">
+      <div class="container-image">
+        <img [src]="article.urlToImage" alt="{{ article.title }}">
+      </div>
+      <div class="container-text">
+        <h4>{{article.title}}</h4>
+        <p>{{article.description}}</p>
+      </div>
+    </div>
+
+    <div class="row category-section">
+      <div class="col-md-6">
+        <div class="title">Politics</div>
+        <div *ngFor="let article of articles.slice(13, 16)" class="news-item">
+          <img [src]="article.urlToImage" alt="">
+          <div>
+            <a [href]="article.url" target="_blank">
+              <h5>{{ article.title }}</h5>
+            </a>
+            <p>{{ article.description }}</p>
+            <small>{{article.author}}</small>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="title">Business</div>
+        <div *ngFor="let article of articles.slice(16,19)" class="news-item">
+          <img [src]="article.urlToImage" alt="">
+          <div>
+            <a [href]="article.url">
+              <h5>{{ article.title }}</h5>
+            </a>
+            <p>{{ article.description }}</p>
+            <small>Dave Rogers in News | Jun 14 | 3 min read</small>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  
+<div class="containerr">
+  <!-- Sol taraftaki ana div -->
+  <div class="left-column">
+    <div class="title">
+      <h3>Recent news</h3> </div>
+      <div class="box" *ngFor="let article of results.slice(0, 3)">
+        <div class="text">
+          <a [href]="article.url">
+            <strong>{{ article.title }}</strong>
+          </a>
+          <p>{{ article.description }}</p>
+          <div class="article-meta">
+            <a href="author-link" class="author">Dave Rogers</a> in
+            <a href="news-link" class="news">News</a>
+          </div>
+          <div class="article-info">
+            <span class="date">Jun 14</span>
+            <span class="read-time"> • 3 min read</span>
+          </div>
+        </div>
+        <div class="image-placeholder">
+          <img [src]="article.urlToImage || 'https://via.placeholder.com/150'" alt="{{ article.title }}" class="img-fluid">
+        </div>
+      </div>
+      
+  </div>
+  
+  <!-- Sağ taraftaki ana div -->
+  <div class="right-column">
+    <div class="title">
+      <h3>Popular Posts</h3> </div>
+    <div class="box" *ngFor="let article of results.slice(3, 6); let i = index">
+      <div class="number">{{ (i + 1) | number: '2.0' }}</div> <!-- This adds the incrementing number -->
+
+      <div class="text">
+        <a [href]="article.url">{{ article.title }}</a>
+        <div class="article-meta">
+          <a href="author-link" class="author">Dave Rogers</a> in
+          <a href="news-link" class="news">News</a>
+        </div>
+        <div class="article-info">
+          <span class="date">Jun 14</span>
+          <span class="read-time"> • 3 min read</span>
+        </div>
+      </div>      <div class="image-placeholder">
+      </div>
+    </div>
+    <div class="titlee">
+      <a href="your-link-url" ><h6>SEE ALL POPULAR</h6> </a></div>
+  </div>
+</div>
+            
+        <div class="last">
+          <div class="last-header">Newsletter Subscribe</div>
+          <div class="last-content">
+            <p>Get the latest news and exclusive content delivered straight to your inbox! Subscribe to our newsletter today!</p>
+          </div>
+          <div class="last-search">
+            <div class="last-searchinput">
+              <input type="text" class="searchinput" placeholder="Enter your email">
+              <button type="submit" class="search-button">
+                <img src="https://img.icons8.com/?size=100&id=12582&format=png&color=1A1A1A" alt="Subscribe">
+              </button>
+            </div>
+          </div>
+        </div>  

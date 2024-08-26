@@ -1,0 +1,200 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  margin-top: 5rem;
+}
+
+.left-column {
+  margin-left: 8rem;
+  width: 60%;
+}
+.right-column{
+  width: 20%;
+  margin-right: 5rem;
+
+}
+.box {
+  margin-top: 2rem;
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  align-items: flex-start; /* Adjusted to align items to the top */
+}
+.number {
+  font-weight: bold;
+  font-size: 24px; /* Increase the size of the number */
+  margin-right: 10px; /* Space between the number and the text */  color: rgb(189, 189, 189);
+}
+.text {
+  margin-left: 10px;
+  font-size: 14px;
+  flex-grow: 1;
+}
+.text a {
+  text-decoration: none; /* Remove underline */
+  color: inherit; /* Use the text color of its parent */
+  color: #000;
+}
+.text p{
+  color: gray;
+}
+.text strong {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px; /* Adds some space between title and description */
+}
+
+.image-placeholder {
+  flex-shrink: 0;
+}
+
+.image-placeholder img {
+  margin-left: 2rem;
+  width: 247px;
+  height: 154px;
+  height: auto;
+  border-radius: 8px;
+}
+
+.img-fluid {
+  width: 100%;
+  height: auto;
+}
+
+.title h6, .title h3 {
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+}
+.title h3 {
+  display: inline-block;
+  border-bottom: 2px solid black;
+  padding-bottom: 1px;
+  margin-bottom: 10px;
+}
+
+.titlee h6 {
+  display: inline-block;
+  color: #45a049;
+  border-bottom: 2px solid rgb(112, 199, 71);
+  padding-bottom: 1px;
+  margin-bottom: 10px;
+}
+.article-meta {
+  margin-top: 5px;
+  font-size: 14px;
+  color: gray; /* Default color for non-link text */
+}
+
+.article-meta a {
+  color: black; /* Color for the links */
+  text-decoration: none; /* Remove underline from links */
+}
+
+.article-meta a:hover {
+  text-decoration: underline; /* Underline links on hover */
+}
+
+.article-info {
+  margin-top: 3px; /* Space between the two lines of metadata */
+  font-size: 14px;
+  color: gray; /* Color for the date and read time */
+}
+
+.article-info .date,
+.article-info .read-time {
+  color: gray; /* Ensure these remain gray */
+}
+
+.title h6 {
+  margin-bottom: 5px; /* Add a small margin to control the spacing */
+}
+
+.last {
+  background-color: whitesmoke;
+  width: 100%;
+  height: 250px;
+  display: flex;
+  align-items: center; /* Center content vertically */
+  padding: 0 20px; /* Add padding to avoid content touching the edges */
+  box-sizing: border-box; /* Include padding and border in element's total width and height */
+  position: relative; /* To allow absolute positioning inside */
+}
+
+.last-header {
+  width: 20%;
+  margin-top: 0; /* Removed margin-top to align properly with flexbox */
+  margin-left: 0; /* Removed margin-left to align with flexbox */
+  font-size: 20px;
+  font-family: sans-serif;
+  font-weight: 300;
+  text-align: center; /* Center the header text */
+}
+
+.last-content {
+  width: 35%;
+  margin-left: 20px; /* Adjusted margin-left for better alignment */
+}
+
+.last-content p {
+  width: 100%; /* Ensure the paragraph uses the full width */
+  font-size: 15px;
+  color: gray;
+  opacity: 1;
+  margin: 0; /* Remove default margin */
+}
+
+.last-search {
+  display: flex;
+  align-items: center; /* Align items vertically */
+  justify-content: flex-start; /* Align items to the start (left) */
+  width: 45%; /* Adjust width to fit content */
+}
+
+.last-searchinput {
+  display: flex;
+  width: 100%; /* Ensure the search container uses full width */
+}
+
+.searchinput {
+  flex: 1; /* Allow input to grow */
+  height: 50px;
+  padding: 0 20px; /* Simplified padding */
+  border-radius: 30px;
+  border: 1px solid #ccc;
+  font-family: inherit;
+  font-size: 1rem;
+}
+
+.search-button {
+  height: 50px; /* Match the height of the input */
+  border-radius: 30px;
+  background: #000; /* Black background */
+  border: none;
+  display: flex; /* Center the icon vertically */
+  align-items: center;
+  justify-content: center;
+  cursor: pointer; /* Show pointer cursor on hover */
+  transition: background-color 0.3s; /* Smooth transition for background color */
+  margin-left: 10px; /* Space between input and button */
+}
+
+.search-button:hover {
+  background-color: #007bff; /* Change button background color on hover */
+}
+
+.search-button img {
+  width: 24px; /* Adjust the size of the icon */
+  height: 24px;
+  filter: invert(1); /* Initially white icon */
+  transition: filter 0.3s; /* Smooth transition for color change */
+}
+
+.search-button:hover img {
+  filter: none; /* Remove inversion for default icon color on hover */
+}
+
+

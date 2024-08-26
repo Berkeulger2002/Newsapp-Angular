@@ -1,0 +1,614 @@
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  background-color: white;
+}
+
+ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+li {
+  display: inline-block;
+  margin-right: 50px;
+}
+
+/* Header styles */
+header {
+  background-color: #ffffff;
+  padding: 10px 0;
+}
+
+.news-container {
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+  
+}
+
+.container-left h1 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.container-left h1:hover {
+  color: greenyellow;
+}
+
+.container-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.container-right a {
+  text-decoration: none;
+  color: #000;
+}
+
+.container-right input[type="text"] {
+  height: 40px;
+  width: 200px;
+  border: 1px solid #ebebeb;
+  border-radius: 30px;
+  padding: 0 15px;
+}
+
+.container-right button {
+  width: 50px;
+  height: 40px;
+  border-radius: 30px;
+  background-color: #000;
+  color: white;
+  border: solid 1px white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.container-right button:hover {
+  background-color: greenyellow;
+}
+
+.container-right i {
+  margin-right: 10px;
+}
+
+/* Slider styles */
+
+.header {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: rgb(255, 255, 255);
+  position: relative;
+}
+
+.slider {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.slider-wrapper {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.testimonal {
+  margin-left: 15rem;
+  min-width: 50%; /* Adjust as needed for the number of visible items */
+  height: 300px;
+  display: flex;
+  background: whitesmoke;
+  padding: 20px;
+  align-items: center;
+  justify-content: space-around;
+  width: 63rem;
+
+}
+
+.img {
+  width: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.user {
+  width: 250px;
+  height: 250px;
+  border-radius: 30px;
+  object-fit: cover;
+}
+
+.user-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 250px;
+  width: 60%;
+}
+
+.slider-btn {
+  position: absolute;
+  top: 50%;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  z-index: 10;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+
+.news-editor {
+  display: flex;
+  align-items: center;
+  margin-left: 100px;
+  margin-top: 50px;
+  margin-left: 8rem;
+}
+
+.news-editor-edit {
+  height: 400px;
+  width: 800px;
+  padding: 10px;
+  margin-bottom: 100px;
+  margin-left: 8rem;
+
+}
+
+.heading {
+  display: flex;
+  align-items: center;
+}
+
+.heading h2:hover {
+  color: greenyellow;
+  cursor: pointer;
+}
+
+.sub-head {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.sub-head-big-part {
+  height: 200px;
+  width: 400px;
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.sub-head-big-part h3 {
+  font-size: 18px;
+}
+
+.sub-head-small-part {
+  height: 200px;
+  width: 300px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+}
+
+.sub-head-small-part ul li {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+}
+
+.sub-head-small-part ul li img {
+  height: 80px;
+  width: 80px;
+  border-radius: 10px;
+}
+
+.sub-head-small-part ul li h4 {
+  font-size: 15px;
+  width: 200px;
+  margin-left: 20px;
+}
+
+.news-editor-trend {
+  height: 400px;
+  width: 300px;
+  padding: 10px;
+ 
+}
+
+.trend-heading {
+  display: flex;
+  align-items: center;
+}
+
+
+
+.trend-news ul li {
+  display: flex;
+  align-items: center;
+
+}
+
+
+
+.container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  
+}
+
+.section-container {
+  display: flex;
+  align-items: center;
+  width: 80%;
+  height: 300px;
+}
+
+.container-image {
+  width: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left:  200px;
+}
+
+.container-image img {
+  width: 400px;
+  height: 250px;
+  border-radius: 30px;
+}
+
+.container-text {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  background-color: whitesmoke;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+
+
+.category-section {
+  margin-top: 50px;
+  width: 80%;
+  margin-left: 100px;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: black;
+  margin-left: 8rem;
+}
+
+.news-item {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 50px;
+  gap: 40px;
+  margin-left: 8rem;
+}
+
+.news-item img {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 50px;
+  object-fit: cover;
+}
+
+.popular-posts {
+  display: flex;
+  flex-direction: column;
+}
+
+.popular-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.popular-item img {
+  width: 100px;
+  height: 100px;
+  margin-right: 15px;
+  object-fit: cover;
+}
+
+.index {
+  font-size: 24px;
+  font-weight: bold;
+  margin-right: 15px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile devices */
+
+  .news-container {
+    flex-direction: column;
+  }
+
+  .container-left h1 {
+    font-size: 1.5rem;
+  }
+
+  .container-right {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .container-right input[type="text"] {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .container-right button {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .container-image {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .container-image img {
+    width: 100%;
+    height: auto;
+  }
+
+  .container-text {
+    width: 100%;
+  }
+
+  .title {
+    font-size: 16px;
+  }
+
+  .news-item {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .news-item img {
+    margin-bottom: 20px;
+  }
+
+  .popular-item img {
+    margin-right: 10px;
+  }
+}
+.last {
+  background-color: whitesmoke;
+  width: 100%;
+  height: 250px;
+  display: flex;
+  align-items: center; /* Center content vertically */
+  padding: 0 20px; /* Add padding to avoid content touching the edges */
+  box-sizing: border-box; /* Include padding and border in element's total width and height */
+  position: relative; /* To allow absolute positioning inside */
+}
+
+.last-header {
+  width: 20%;
+  margin-top: 0; /* Removed margin-top to align properly with flexbox */
+  margin-left: 0; /* Removed margin-left to align with flexbox */
+  font-size: 20px;
+  font-family: sans-serif;
+  font-weight: 300;
+  text-align: center; /* Center the header text */
+}
+
+.last-content {
+  width: 35%;
+  margin-left: 20px; /* Adjusted margin-left for better alignment */
+}
+
+.last-content p {
+  width: 100%; /* Ensure the paragraph uses the full width */
+  font-size: 15px;
+  color: gray;
+  opacity: 1;
+  margin: 0; /* Remove default margin */
+}
+
+.last-search {
+  display: flex;
+  align-items: center; /* Align items vertically */
+  justify-content: flex-start; /* Align items to the start (left) */
+  width: 45%; /* Adjust width to fit content */
+}
+
+.last-searchinput {
+  display: flex;
+  width: 100%; /* Ensure the search container uses full width */
+}
+
+.searchinput {
+  flex: 1; /* Allow input to grow */
+  height: 50px;
+  padding: 0 20px; /* Simplified padding */
+  border-radius: 30px;
+  border: 1px solid #ccc;
+  font-family: inherit;
+  font-size: 1rem;
+}
+
+.search-button {
+  height: 50px; /* Match the height of the input */
+  border-radius: 30px;
+  background: #000; /* Black background */
+  border: none;
+  display: flex; /* Center the icon vertically */
+  align-items: center;
+  justify-content: center;
+  cursor: pointer; /* Show pointer cursor on hover */
+  transition: background-color 0.3s; /* Smooth transition for background color */
+  margin-left: 10px; /* Space between input and button */
+}
+
+.search-button:hover {
+  background-color: #007bff; /* Change button background color on hover */
+}
+
+.search-button img {
+  width: 24px; /* Adjust the size of the icon */
+  height: 24px;
+  filter: invert(1); /* Initially white icon */
+  transition: filter 0.3s; /* Smooth transition for color change */
+}
+
+.search-button:hover img {
+  filter: none; /* Remove inversion for default icon color on hover */
+}
+
+.containerr {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  margin-top: 5rem;
+}
+
+.left-column {
+  margin-left: 8rem;
+  width: 60%;
+}
+.right-column{
+  width: 20%;
+  margin-right: 5rem;
+  flex: 1;
+
+}
+.box {
+  margin-top: 2rem;
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  align-items: flex-start; /* Adjusted to align items to the top */
+}
+.number {
+  font-weight: bold;
+  font-size: 24px; /* Increase the size of the number */
+  margin-right: 10px; /* Space between the number and the text */  color: rgb(189, 189, 189);
+}
+.text {
+  margin-left: 10px;
+  font-size: 14px;
+  flex-grow: 1;
+}
+.text a {
+  text-decoration: none; /* Remove underline */
+  color: inherit; /* Use the text color of its parent */
+  color: #000;
+}
+.text p{
+  color: gray;
+}
+.text strong {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px; /* Adds some space between title and description */
+}
+
+.image-placeholder {
+  flex-shrink: 0;
+}
+
+.image-placeholder img {
+  margin-left: 2rem;
+  width: 247px;
+  height: 154px;
+  height: auto;
+  border-radius: 8px;
+}
+
+.img-fluid {
+  width: 100%;
+  height: auto;
+}
+
+ .title h3 {
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+}
+.title h3 {
+  display: inline-block;
+  border-bottom: 2px solid black;
+  padding-bottom: 1px;
+  margin-bottom: 10px;
+}
+
+.titlee h6 {
+  display: inline-block;
+  color: #45a049;
+  border-bottom: 2px solid rgb(112, 199, 71);
+  padding-bottom: 1px;
+  margin-bottom: 10px;
+}
+.article-meta {
+  margin-top: 5px;
+  font-size: 14px;
+  color: gray; /* Default color for non-link text */
+}
+
+.article-meta a {
+  color: black; /* Color for the links */
+  text-decoration: none; /* Remove underline from links */
+}
+
+.article-meta a:hover {
+  text-decoration: underline; /* Underline links on hover */
+}
+
+.article-info {
+  margin-top: 3px; /* Space between the two lines of metadata */
+  font-size: 14px;
+  color: gray; /* Color for the date and read time */
+}
+
+.article-info .date,
+.article-info .read-time {
+  color: gray; /* Ensure these remain gray */
+}
+

@@ -1,0 +1,46 @@
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+        margin-left: 16rem;
+        margin-right: 16rem;
+    }
+  }
+  .container input[type="text"] {
+    padding: 8px;
+    border: rgb(130, 130, 130);
+    border-bottom: 1px solid rgb(130, 130, 130);
+    border-radius: 2px;
+    margin: 20px;
+    margin-right: 5px;
+    font-size: 17px;
+    width: 300px;
+  }
+  
+  #message{
+    
+    border-radius: 3px;
+    border: rgb(130, 130, 130);
+    border-bottom: 1px solid rgb(130, 130, 130);
+  }
+  .container input[type="submit"] {
+    background-color: rgb(230, 227, 227);
+    padding: 8px;
+    border-color: black;
+    border-radius: 35px;
+    margin: 20px;
+    margin-right: 5px;
+    font-size: 17px;
+    height: 70px;
+    transition: background-color 0.3s ease; /* Geçiş animasyonu */
+}
+
+.container input[type="submit"]:hover {
+    background-color: green; /* Hover durumunda yeşile dönüş */
+    color: white; /* İsteğe bağlı olarak yazı rengini beyaz yapabilirsiniz */
+}
+
+  .section-title{
+    font-size: 20px;
+    padding: 10px;
+    text-decoration: underline;
+  }
