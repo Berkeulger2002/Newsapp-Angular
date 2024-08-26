@@ -19,6 +19,7 @@ It serves as a platform to aggregate and display news from NewsAPI. The website 
 ## Usage
 
 Home page: The home page displays a selection of news from the News API.
+
 Category: Users can select a specific category from the navigation menu based on their article interest.
 ## Screenshots
 ![WEBAPP](https://github.com/user-attachments/assets/1063caea-c4d1-4749-aff5-492372a05b14)
